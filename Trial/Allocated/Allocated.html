@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  margin-top: 50px;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#c1{
+  margin-left: 25%;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" id="c1">
+    <div class="card">
+        <img src="upload.png" alt="Allocate_amount" height="75%" width="75%"/><br>
+        <button onClick="location.href='Allocated/allo1.php'">Upload Data</button>
+    </div>
+  </div>
+
+  <div class="column" id="c2">
+    <div class="card">
+        <img src="view.jpeg" alt="View_allocated_amount" height="75%" width="75%"><br>
+        <button onClick="location.href='Allocated/allocated.php'">View Allocated Amount</button>       
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

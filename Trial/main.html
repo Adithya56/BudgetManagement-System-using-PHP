@@ -1,0 +1,119 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+	<title>Finance Management</title>
+	<link type="text/css" rel="stylesheet" href="style/stylesheet.css">
+	<script>
+		/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+		function openNav() {
+			document.getElementById("mySidebar").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+
+		function openu() {
+			if (document.getElementById("utilization").style.display == "none") {
+				document.getElementById("utilization").style.display = "block";
+				document.getElementById("proposal").style.display = "none";
+			} else {
+				document.getElementById("utilization").style.display = "none";
+			}
+		}
+
+		function openp() {
+			if (document.getElementById("proposal").style.display == "none") {
+				document.getElementById("utilization").style.display = "none";
+				document.getElementById("proposal").style.display = "block";
+			} else {
+				document.getElementById("proposal").style.display = "none";
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="main" height="20%">
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+		<span class="title">
+			<img src="info/mvgr.jpg" width="100px" height="80px">
+			<h1>MVGR COLLEGE OF ENGINEERING</h1>
+			<img src="info/mvgr.jpg" width="100px" height="80px">
+		</span>
+	</div>
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="sidenav">
+			<div id="x3">
+				<button class="dropdown-btn" onclick="openp()">Budget Proposal
+				</button>
+				<div class="dropdown-container" id="proposal">
+					<a href="Proposal/soft1.php" target="display">Software</a>
+					<a href="Proposal/equi1.php" target="display">Equipment</a>
+					<a href="Proposal/lib1.php" target="display">Library</a>
+					<a href="Proposal/maint1.php" target="display">Maintenance</a>
+					<a href="Proposal/rr1.php" target="display">Rennovation/Relocation</a>
+					<a href="Proposal/randd1.php" target="display">R and D</a>
+					<a href="Proposal/fdept1.php" target="display">Faculty Development</a>
+					<a href="Proposal/sdept1.php" target="display">Student Development</a>
+					<a href="Proposal/hosp1.php" target="display">Hospitality</a>
+					<a href="Proposal/furn1.php" target="display">Furniture</a>
+					<a href="Proposal/pcl1.php" target="display">Proposal to Central Library</a>
+					<a href="Proposal/aoi1.php" target="display">Any Other Items</a>
+					<a href="Reports/preports.php" target="display">Reports</a>
+ 
+				</div>
+			</div>
+			<div id="x2">
+				<a href="Allocated/Allocated.html" target="display" class="dropdown-btn" onMouseOver="this.style.color='#5b09b9;'"
+					style="padding: 2px 8px 6px 16px;font-size:15px;font-family:Arial, Helvetica, sans-serif;">Budget
+					Allocated</a>
+			</div>
+			<div id="x3">
+				<button class="dropdown-btn" onclick="openu()">Budget Utilization
+				</button>
+				<div class="dropdown-container" id="utilization">
+					<a href="Utilization/soft.php" id="e1" target="display">Software</a>
+					<a href="Utilization/equi.php" id="e2" target="display">Equipment</a>
+					<a href="Utilization/lib.php" id="e3" target="display">Library</a>
+					<a href="Utilization/main.php" id="e4" target="display">Maintenance</a>
+					<a href="Utilization/ren.php" id="e5" target="display">Rennovation/Relocation</a>
+					<a href="Utilization/randd.php" id="e6" target="display">R and D</a>
+					<a href="Utilization/fdept.php" id="e7" target="display">Faculty Development</a>
+					<a href="Utilization/sdept.php" id="e8" target="display">Student Development</a>
+					<a href="Utilization/hosp.php" id="e9" target="display">Hospitality</a>
+					<a href="Utilization/furn.php" id="e10" target="display">Furniture</a>
+					<a href="Utilization/pcl.php" id="e11" target="display">Proposal to Central Library</a>
+					<a href="Utilization/aoi.php" id="e12" target="display">Any Other Items</a>
+					<a href="Utilization/ureports.html" target="display">Reports</a>
+				</div>
+			</div>
+			<div>
+				<a href="reports/reports.php" target="display" class="dropdown-btn" onMouseOver="this.style.color='#5b09b9;'"
+					style="padding: 2px 8px 6px 16px;font-size:15px;font-family:Arial, Helvetica, sans-serif;">Reports</a>
+			</div>
+		</div>
+	</div>
+	<div class="nav" id="nav" height="10%">
+		<ul class="links">
+			<!-- <li><a href="info/contact.html" id="n1" target="display">Meet us</a></li> -->
+			<!-- <li><a href="info/about.html" id="n2" target="display">About us</a></li> -->
+			<li><a href="#" id="n3">Logout</a></li>
+			<li><a href="main.html" id="n4">Home</a></li>
+		</ul>
+	</div>
+
+	<iframe height="100%" width="100%" frameborder="0" allowfullscreen name="display">
+	</iframe>
+
+</body>
+
+</html>
